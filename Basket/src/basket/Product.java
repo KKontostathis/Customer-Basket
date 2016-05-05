@@ -7,18 +7,15 @@ public class Product {
 	private String name;
 	private BigDecimal price;
 	
+	public Product(){
+		setName("");
+		setPrice(BigDecimal.valueOf(0.0));
+	}
+	
 	public Product(String productName, BigDecimal productPrice){
 		setName(productName);
 		setPrice(productPrice);
 	}
-
-	/*
-	boolean equals (Product pr) {
-        if (pr.getName().equalsIgnoreCase(this.getName()) &&  pr.getPrice() == this.getPrice()) 
-        	return true;
-        else
-        	return false;
-    }*/
 
 	public String getName() {
 		return name;
